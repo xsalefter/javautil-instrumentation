@@ -17,12 +17,14 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.javautil.oracle.OracleHelper;
 
 // TODO this doesn't work if it is in org.javautil.oracle package
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@TestPropertySource("classpath:oracle.properties")
 public class OracleHelperTest {
 	Logger logger = LoggerFactory.getLogger(getClass());
 
