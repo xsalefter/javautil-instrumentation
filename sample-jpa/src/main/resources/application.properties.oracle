@@ -1,0 +1,8 @@
+spring.datasource.driver-class-name = oracle.jdbc.OracleDriver
+spring.datasource.url=jdbc:oracle:thin:@//localhost:1521/sales_reporting_pdb
+#spring.datasource.url=jdbc:oracle:thin:@//localhost:1521/dev12c
+spring.datasource.username = sa
+spring.datasource.password = tutorial
+spring.jpa.database-platform=org.hibernate.dialect.Oracle10gDialect
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
+spring.jpa.show-sql = true

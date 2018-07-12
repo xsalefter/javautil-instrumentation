@@ -1,0 +1,9 @@
+spring.datasource.driver-class-name = org.postgresql.Driver
+#spring.datasource.url = jdbc:postgresql://localhost/sales_reporting_db?currentSchema=integration_test
+#spring.datasource.url = jdbc:postgresql://localhost/sales_reporting_db?search_path=integration_test
+spring.datasource.url = jdbc:postgresql://localhost/sales_reporting_db?searchpath=integration_test
+spring.datasource.username = jjs
+spring.datasource.password = jjs
+spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
+spring.jpa.show-sql = true

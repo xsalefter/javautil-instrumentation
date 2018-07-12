@@ -1,0 +1,40 @@
+head	1.1;
+access;
+symbols;
+locks; strict;
+comment	@# @;
+
+
+1.1
+date	2018.07.11.20.59.07;	author jjs;	state Exp;
+branches;
+next	;
+
+
+desc
+@@
+
+
+1.1
+log
+@Initial revision
+@
+text
+@
+
+-- connect / as sysdba 
+-- http://www.dba-oracle.com/t_pluggable_database.htm
+
+
+set define on
+set echo on
+spool create_pdg
+create pluggable database 
+  sales_reporting
+admin user 
+   sr_admin identified by tutorial 
+file_name_convert = ('/pdbseed/', '/sales_reporting/');
+
+alter pluggable database sales_reporting open;
+alter session set container = sales_reporting;
+@

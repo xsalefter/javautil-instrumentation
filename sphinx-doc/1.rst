@@ -1,0 +1,12 @@
+Base Project
+============
+
+Configuration Files
+-------------------
+
+application.properties
+**********************
+
+* Database Connection Properties
+
+* hibernate properties

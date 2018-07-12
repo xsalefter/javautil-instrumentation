@@ -1,0 +1,1 @@
+select serial# from v$process group by serial# having count(*)  > 1;

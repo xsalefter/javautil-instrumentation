@@ -1,0 +1,27 @@
+SQL>   drop sequence service_rqst_log_nbr_seq;
+
+Sequence SERVICE_RQST_LOG_NBR_SEQ dropped.
+
+SQL>   drop TABLE SERVICE_RQST;
+
+Table SERVICE_RQST dropped.
+
+SQL>   drop TABLE SERVICE_RQST_LOG ;
+
+Table SERVICE_RQST_LOG dropped.
+
+SQL>   drop TABLE SERVICE_RQST_PARMS ;
+
+Error starting at line : 7 File @ /common/home/jjs/java-projects/Instrumentation/oracle/service_request_tables.drop.sql
+In command -
+  drop TABLE SERVICE_RQST_PARMS
+Error report -
+ORA-00942: table or view does not exist
+
+SQL> 
+SQL> 
+SQL> 
+SQL> 
+SQL> select table_name from user_tables where table_name like 'SERVICE%';
+no rows selected
+SQL> exit
